@@ -1,16 +1,40 @@
-# React + Vite
+# Grindset
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live app:** https://glaseagle.github.io/grindset/
 
-Currently, two official plugins are available:
+A satirical wellness tracker for your vaping and drinking habits — gamified, socially pressured, and completely unserious.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## What it does
 
-## React Compiler
+Grindset applies hustle-culture gamification to the least productive behaviors imaginable. Log your vapes and drinks, track your BAC, climb a leaderboard, and earn XP for staying on your grind.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Feed** — activity timeline of your logged sessions
+- **Record** — log a vape or drink and earn XP
+- **BAC Logger** — track your blood alcohol content with a graph over time
+- **Leaderboard** — see how your habits stack up against your friends
+- **Achievements** — unlock badges for consistent (bad) behavior
+- **Streak tracking** — keep the streak alive, don't skip a day
+- **Nudge Modal** — get peer-pressured by a random friend when you haven't logged in a while
+- **Shop** — spend your hard-earned XP
 
-## Expanding the ESLint configuration
+All data is stored locally in `localStorage` — no account, no server, no judgment (from us).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech stack
+
+- React 19
+- Vite
+- Recharts (BAC graphs)
+- Tesseract.js (OCR for photo uploads)
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
